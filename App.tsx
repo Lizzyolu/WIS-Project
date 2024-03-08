@@ -1,10 +1,15 @@
 
-import { Tabs, TabList, Tab, TabPanels } from '@chakra-ui/react'
-import { Image } from '@chakra-ui/react'
-import { Box } from '@chakra-ui/react'
-import { Input } from '@chakra-ui/react'
-import { Button } from '@chakra-ui/react'
-import { Text } from '@chakra-ui/react'
+import React from "react";
+import { Tabs, TabList, Tab, TabPanels, } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
+import { Input } from '@chakra-ui/react';
+import { Button } from '@chakra-ui/react';
+import { Text } from '@chakra-ui/react';
+import { Icon, } from '@chakra-ui/react';
+import { GoMarkGithub } from 'react-icons/go';
+import { IoLogoLinkedin, IoMailOutline } from 'react-icons/io';
+import { MdCopyright } from 'react-icons/md';
 
 
 export const App = () => (
@@ -97,6 +102,22 @@ export const App = () => (
     Sign up
   </Button>
 
+
+  <Box>
+    <Icon as={GoMarkGithub} />
+    <Icon as={IoLogoLinkedin} />
+    <Icon as={IoMailOutline} />
+    <Icon as={MdCopyright} />
+    <Text
+      fontFamily="Inter"
+      lineHeight="1.5"
+      fontWeight="regular"
+      fontSize="14px"
+      color="black"
+    >
+      2024 WIS Club
+    </Text>
+  </Box>
 
 
   </div>

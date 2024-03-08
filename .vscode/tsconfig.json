@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      // Compiler options here
+    },
+    "include": [
+      "src",
+      "node_modules/@chakra-ui/react"
+    ]
+  }
+  
+  
