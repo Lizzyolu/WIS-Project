@@ -1,0 +1,8 @@
+import { Box, Card } from '@chakra-ui/react'
+
+export const App = () => (
+  <Box>
+    <Card variant="outline" width="353px" height="350px" maxWidth="100%" />
+    <Box borderRadius="8px" width="353px" height="169px" maxWidth="100%" />
+  </Box>
+)

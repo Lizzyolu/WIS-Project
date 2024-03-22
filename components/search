@@ -1,0 +1,8 @@
+import { InputGroup, InputLeftAddon, Input } from '@chakra-ui/react'
+
+export const App = () => (
+  <InputGroup size="md" width="731px" maxWidth="100%">
+    <InputLeftAddon background="gray.100" />
+    <Input placeholder="Search" />
+  </InputGroup>
+)

@@ -1,0 +1,10 @@
+import { Tabs, Tab, TabPanels } from '@chakra-ui/react'
+
+export const App = () => (
+  <Tabs variant="soft-rounded" size="lg">
+    <Tab>Find Events</Tab>
+    <Tab>Create Events</Tab>
+    <Tab>Log In</Tab>
+    <TabPanels />
+  </Tabs>
+)
