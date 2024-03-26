@@ -1,0 +1,3 @@
+import { Box } from '@chakra-ui/react'
+
+export const App = () => <Box width="1697px" height="653px" maxWidth="100%" />

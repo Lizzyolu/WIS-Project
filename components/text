@@ -1,0 +1,15 @@
+import { Text } from '@chakra-ui/react'
+
+export const App = () => (
+  <Text
+    fontFamily="Inter"
+    lineHeight="1"
+    fontWeight="bold"
+    fontSize="64px"
+    color="#FFFFFF"
+    width="659px"
+    maxWidth="100%"
+  >
+    WHERE ACADEMIA MEETS INDUSTRY
+  </Text>
+)

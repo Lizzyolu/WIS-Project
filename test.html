@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- React Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/react-icons/4.2.0/react-icons.min.css">
+  <title>Home Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    #header {
+      background-color: rgb(155, 154, 154);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    #tabs {
+      display: flex;
+      justify-content: space-around;
+      background-color: rgb(254, 254, 254);
+      padding: 10px;
+    }
+    .tab {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .tab img {
+      width: 50px;
+      height: 50px;
+    }
+    .tab:hover {
+      background-color: #ccc;
+    }
+    #content {
+      padding: 20px;
+      text-align: center;
+    }
+    .custom-box {
+        width: 50px;
+        height: 20px;
+        background-color: #EDF2F7;
+    }
+    .custom-text {
+        font-family: Inter, sans-serif;
+        line-height: 1.2;
+        font-weight: bold;
+        font-size: 20px;
+        color: #000000;
+        text-align: right;
+    }
+  </style>
+</head>
+<body>
+<!-- Box -->
+<div class="custom-box"></div>
+
+<!-- Text -->
+<span class="custom-text">WIS</span>
+
+<!-- Input Group -->
+<div class="input-group" style="width: 731px; max-width: 100%;">
+    <!-- Input Left Addon -->
+    <div class="input-left-addon" style="background-color: gray;">
+    </div>
+    <!-- Input -->
+    <input type="text" placeholder="Search">
+</div>
+
+<!-- Tabs -->
+<div class="tabs" style="width: 329px; height: 52px; max-width: 100%;">
+  <!-- Tab 1 -->
+  <button class="tab">My Events</button>
+  <!-- Tab 2 -->
+  <button class="tab">email@address.com</button>
+  <!-- Tab Panels -->
+  <!-- You can add content for TabPanels here -->
+</div>
+
+
+<div id="tabs">
+  <div class="tab"><a href="#">Home<br><alt="Home"></a></div>
+  <div class="tab"><a href="#">Search<br><alt="Login"></a></div>
+  <div class="tab"><a href="#">Event<br><alt="Event"></a></div>
+  <div class="tab"><a href="#">Signup<br><alt="Signup"></a></div>
+</div>
+<div>
+    <!-- Tabs component (no direct equivalent in HTML) -->
+
+    <!-- Image component -->
+    <style>
+        .container {
+          position: relative;
+          width: 100%;
+          height: 498px;
+          max-width: 100%;
+          overflow: hidden; /* Optional: Ensure the text does not overflow the container */
+        }
+        .image {
+          display: block;
+          width: 100%;
+          height: 498px;
+          object-fit: cover;
+        }
+        /* CSS for the button */
+    .custom-button {
+        width: 211px;
+        height: 48px;
+        background-color: rgb(30, 136, 201);
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+        .text {
+        
+          position: absolute;
+          top: 80%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: rgb(30, 136, 201);
+          font-family: Inter;
+          font-weight: bold;
+          display: inline-block;
+          font-size: 40px;
+          text-align: center;
+          transition: opacity 0.3s ease; /* Smooth transition effect */ 
+        }
+        .text:hover {
+  color: #ffffff; /* Change color on hover */
+}
+    
+      </style>
+      <div class="container">
+        <img class="image" src="public/images/pixel.jpeg" alt="">
+        <h1 class="text">WHERE ACADEMIA MEETS INDUSTRY </h1>
+      </div>
+                <!-- Button -->
+<button class="custom-button">Find Your Next Event</button>
+  
+      
+    <!-- Text components -->
+    <h2 style="font-family: Inter; font-weight: bold; font-size: 20px; color: dodgerblue;text-align: center;">Propose a Guest Lecture for the WIS Club</h2>
+    <h2 style="font-family: Inter; font-weight: bold; font-size: 20px; color: #000000;">EVENTS</h2>
+    <!-- Image component -->
+
+    <style> 
+    .container {
+      display: flex;
+    }
+    .column {
+      flex: 1; /* Each column takes equal space */
+      padding: 10px; /* Add spacing between columns */
+    }
+    img {
+      width: 100%; /* Make images fill the entire column */
+      height: auto; /* Maintain aspect ratio */
+    }
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px; /* Adjust the gap between images as needed */
+        text-align: center;
+    }
+    .image-grid img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .bold-text {
+        font-weight: bold;
+    }
+     </style>
+
+     <div class="image-grid">
+       <div><img src="public/images/aws.jpeg" alt="Image 1">
+        <p><span class="bold-text">AWS Workshop</span></p>
+        <p> Monday, March 25 <br> 4:00 PM <br> GITC 4402 <br> James Flan</p>
+      </div>
+      <div><img src="public/images/infinity.jpeg" alt="Image 2">
+        <p><span class="bold-text">Let's Build a CI/CD Pipeline</span></p>
+        <p> Monday, April 1 <br> 4:00 PM <br> GITC 3600 <br> Cathy Gordio</p>
+      </div>
+      <div><img src="public/images/llm.jpeg" alt="Image 3">
+        <p><span class="bold-text">Introduction to LLMs</span></p>
+        <p> Monday, April 10 <br> 4:00 PM <br> GITC 3600 <br> Raul Piaz</p>
+      </div>
+      <div><img src="public/images/laptop.jpeg" alt="Image 3">
+        <p><span class="bold-text">Python for Data Analysis</span></p>
+        <p> Monday, April 8 <br> 4:00 PM <br> GITC 3600 <br> Raul Piaz</p>
+      </div>
+      <div><img src="public/images/llm.jpeg" alt="Image 3">
+        <p><span class="bold-text">Introduction to LLMs</span></p>
+        <p> Wednesday, April 10 <br> 4:00 PM <br> GITC 3600 <br> Raul Piaz</p>
+      </div>
+      <div><img src="public/images/infinity.jpeg" alt="Image 3">
+        <p><span class="bold-text">Let's Build a CI/CD Pipeline</span></p>
+        <p> Monday, April 1 <br> 4:00 PM <br> GITC 3600 <br> Cathy Gordio</p>
+      </div>
+
+    </div> 
+  
+
+<!-- Box container -->
+<div class="box">
+  <!-- Icons -->
+  <i class="fab fa-github"></i>
+  <i class="fab fa-linkedin"></i>
+  <i class="far fa-envelope"></i>
+  <i class="fas fa-copyright"></i>
+  <!-- Text -->
+  <p style="font-family: Inter; line-height: 1.5; font-weight: normal; font-size: 14px; color: black;">2024 WIS Club</p>
+</div>
+
+
+
+</body>
+</html>

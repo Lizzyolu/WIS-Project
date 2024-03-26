@@ -1,0 +1,7 @@
+import { Button } from '@chakra-ui/react'
+
+export const App = () => (
+  <Button size="lg" colorScheme="blue" width="211px" height="48px">
+    Find Your Next Event
+  </Button>
+)
